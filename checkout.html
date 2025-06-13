@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduNation Hub | Checkout</title>
+  <link rel="stylesheet" href="checkout.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">EduNation Hub</div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html" class="active">Checkout</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="checkout-container">
+    <h2>Checkout</h2>
+    <p>Thank you for choosing EduNation Hub. Please make your payment to the account below:</p>
+
+    <div class="payment-details">
+      <p><strong>Bank Name:</strong>opay</p>
+      <p><strong>Account Name:</strong> EduNation Hub Ltd</p>
+      <p><strong>Account Number:</strong> <span id="account-number">7080045004</span></p>
+    </div>
+
+    <p>After making payment, click the button below to confirm and send your receipt to our WhatsApp number.</p>
+
+    <button onclick="confirmPayment()">Confirm Payment via WhatsApp</button>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 EduNation Hub</p>
+    <div class="socials">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">X (Twitter)</a>
+    </div>
+  </footer>
+
+  <script>
+    function confirmPayment() {
+      const message = encodeURIComponent(
+        "Hello EduNation Hub, I have made the payment. Please find my receipt attached. Thank you."
+      );
+      // Replace the number below with your business WhatsApp number (include country code, no +)
+      const whatsappNumber = "09025445039";
+      window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
+    }
+  </script>
+</body>
+</html>

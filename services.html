@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | LearnWise Hub</title>
+  <link rel="stylesheet" href="services.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">LearnWise Hub</div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <h1>Our Educational Products</h1>
+    <div class="product-container" id="product-list"></div>
+  </section>
+
+  <!-- Quizzes Section -->
+  <section class="quiz-section">
+    <h2>Test Your Knowledge & Win Prizes!</h2>
+    <div id="quiz-box" class="quiz-box">
+      <p id="quiz-question">Loading question...</p>
+      <div id="quiz-options" class="quiz-options"></div>
+      <button onclick="loadQuiz()" class="btn">Next Question</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 LearnWise Hub. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="services.js"></script>
+</body>
+</html>
