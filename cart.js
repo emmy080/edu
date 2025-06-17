@@ -17,7 +17,7 @@ function renderCart() {
     const itemDiv = document.createElement("div");
     itemDiv.className = "cart-item";
     itemDiv.innerHTML = `
-      <p>${item.name} - $${item.price}</p>
+      <p>${item.name} - &#8358;${item.price}</p>
       <button onclick="removeItem(${index})">Remove</button>
     `;
     cartContainer.appendChild(itemDiv);

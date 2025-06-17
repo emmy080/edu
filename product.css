@@ -1,5 +1,11 @@
-.header{
-  background-color: #0066cc;
+/* Services Page */
+.services-section {
+  padding: 2rem;
+  background: #f4f9ff;
+  text-align: center;
+}
+.header {
+  background: #1a237e;
   color: #fff;
   padding: 1rem 2rem;
   display: flex;
@@ -9,143 +15,87 @@
   top: 0;
   z-index: 1000;
 }
-.logo{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+.logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 .navbar a {
   color: #fff;
   margin-left: 1.5rem;
   text-decoration: none;
   transition: color 0.3s;
 }
-.navbar a:hover{
+
+.navbar a:hover {
   color: #ffd600;
 }
-.hero {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background: linear-gradient(to right, #0066cc);
-  color: white;
-  padding: 5rem 2rem;
-  text-align: center;
-}
-.hero h1 {
-  font-size: 2.8rem;
-}
-.hero p {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
-.btn {
-  background: #ffcc00;
-  padding: 0.7rem 1.5rem;
-  text-decoration: none;
-  border-radius: 6px;
-  color: #000;
-  font-weight: bold;
-}
-.btn.light {
-  background: white;
-  color: #004080;
-}
-.features {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background: #f4f9ff;
-  padding: 3rem 1.5rem;
-  text-align: center;
-}
-.feature-grid {
+.product-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
   margin-top: 2rem;
 }
-.feature-box {
+
+.product-card {
   background: white;
-  padding: 1.5rem;
-  width: 260px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.2s ease;
 }
-.product-preview {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background: #fff;
-  padding: 3rem 2rem;
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card button {
+  background: #1a237e;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz-section {
+  background: #fff8e1;
+  padding: 2rem;
   text-align: center;
 }
-.product-grid {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-.product-card {
-  background: #e0f7fa;
-  padding: 1.2rem;
-  width: 200px;
+
+.quiz-box {
+  max-width: 600px;
+  margin: auto;
+  padding: 1.5rem;
+  background: white;
   border-radius: 10px;
-  font-weight: bold;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-.quiz-highlight {
-  background: #ffe0b2;
-  padding: 3rem 2rem;
-  text-align: center;
-}
-.why-us {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('back.jpg');
-  font-size: 30px;
-  color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background: #e3f2fd; */
-  text-align: center;
-  padding: 3rem 2rem;
-}
-.why-us ul {
-  font-size: 30px;
-  list-style: none;
-  font-size: 1.1rem;
-}
-.why-us ul li {
-  margin: 0.8rem 0;
-}
-.testimonials {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background: #e3f2fd;
-  padding: 3rem 2rem;
-  text-align: center;
-}
-.testimonial-grid {
+
+.quiz-options {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1rem 0;
 }
-.testimonial-card {
-  background: white;
-  padding: 1.5rem;
-  width: 250px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+.option-btn {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
 }
-.testimonial-card span {
-  display: block;
-  margin-top: 1rem;
-  font-weight: bold;
-  color: #333;
-}
-.cta {
-  background: #004080;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-}
-.cta .btn {
-  margin-top: 1rem;
+
+.option-btn:hover {
+  background: #d1eaff;
 }
 footer {
   background-color: #004080;
@@ -268,13 +218,16 @@ footer {
   margin-top: 20px;
 }
 /* .footer {
-  background: #004080;
-  color: white;
+  background: #1a237e;
+  color: #fff;
+  padding: 1.5rem 2rem;
   text-align: center;
-  padding: 1.5rem;
+  margin-top: 4rem;
 }
+
 .footer .social-icons a {
-  margin: 0 0.5rem;
-  color: #ffcc00;
+  color: #ffd600;
+  margin: 0 1rem;
   text-decoration: none;
+  font-weight: bold;
 } */

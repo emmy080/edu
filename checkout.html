@@ -8,24 +8,24 @@
 </head>
 <body>
   <header class="header">
-    <div class="logo">EduNation Hub</div>
+    <div class="logo">LearnWise</div>
     <nav class="navbar">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
+      <a href="product.html">Product</a>
       <a href="cart.html">Cart</a>
       <a href="checkout.html" class="active">Checkout</a>
-      <a href="contact.html">Contact</a>
+      <!-- <a href="contact.html">Contact</a> -->
     </nav>
   </header>
 
   <main class="checkout-container">
     <h2>Checkout</h2>
-    <p>Thank you for choosing EduNation Hub. Please make your payment to the account below:</p>
+    <p>Thank you for choosing LearnWise. Please make your payment to the account below:</p>
 
     <div class="payment-details">
       <p><strong>Bank Name:</strong>opay</p>
-      <p><strong>Account Name:</strong> EduNation Hub Ltd</p>
+      <p><strong>Account Name:</strong> LearnWise Ltd</p>
       <p><strong>Account Number:</strong> <span id="account-number">7080045004</span></p>
     </div>
 
@@ -34,14 +34,65 @@
     <button onclick="confirmPayment()">Confirm Payment via WhatsApp</button>
   </main>
 
-  <footer class="footer">
+  
+  <footer>
+  <div class="footer-container">
+    
+    <div class="footer-about">
+      <h3>LearnWise</h3>
+      <p>Your trusted partner in providing quality educational materials and tools to empower learners and educators across Nigeria.</p>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <ul>
+        <li>Phone: +234 9125445039</a></li>
+        <li>Email: Learnwise@gmail.com</li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-resources">
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+  <h3>Follow Us</h3>
+  <div class="social-icons">
+    <a href="https://wa.me/2349125445039" aria-label="WhatsApp" target="_blank" rel="noopener">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+</div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 LearnWise. All Rights Reserved.</p>
+  </div>
+</footer>
+  <!-- <footer class="footer">
     <p>© 2025 EduNation Hub</p>
     <div class="socials">
       <a href="#">Facebook</a>
       <a href="#">Instagram</a>
       <a href="#">X (Twitter)</a>
     </div>
-  </footer>
+  </footer> -->
 
   <script>
     function confirmPayment() {
@@ -49,7 +100,7 @@
         "Hello EduNation Hub, I have made the payment. Please find my receipt attached. Thank you."
       );
       // Replace the number below with your business WhatsApp number (include country code, no +)
-      const whatsappNumber = "09025445039";
+      const whatsappNumber = "2349125445039";
       window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
     }
   </script>

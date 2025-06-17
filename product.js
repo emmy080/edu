@@ -1,26 +1,16 @@
 // Sample JSON data
 const products = [
-  { name: "Mathematics Textbook", price: 20, type: "Book" },
-  { name: "Science Learning App", price: 15, type: "Application" },
-  { name: "Backpack", price: 30, type: "Stationery" },
-  { name: "Pencil Set", price: 5, type: "Stationery" },
+  { name: "Mathematics Textbook", price: 7500, type: "Book", Image: "maths.webp" },
+  { name: "Science Learning App", price: 2000, type: "Application", Image: "app.jpg" },
+  { name: "Backpack", price: 15000, type: "Stationery", Image: "bag.jpg" },
+  { name: "Classic school bag", price: 20000, type: "Stationery", Image: "school bag.jpg" },
+  { name: "Essential mathematics", price: 3000, type: "Stationery", Image: "ess maths.jpg" },
+  { name: "General Mathematics", price: 2500, type: "Stationery", Image: "gen maths.jpg" },
+  { name: "Stylish backpack", price: 30000, type: "Stationery", Image: "sty bag.webp" },
+  { name: "Bentgo Lunch bag", price: 15000, type: "Stationery", Image: "shopping.webp" },
+  { name: "classic pen", price: 1500, type: "Stationery", Image: "pen.jpg" },
+  { name: "Algebra calculator", price: 2500, type: "Stationery", Image: "cal.jpg" },
 ];
-
-const quizData = [
-  {
-    question: "Which is the capital of france?",
-    options: ["Berlin", "Rome", "Paris", "London"],
-    answer: "Paris"
-  },
-  {
-    question: "Which planet is known as the Red Planet?",
-    options: ["Earth", "Jupiter", "Mars", "Saturn"],
-    answer: "Mars"
-  }
-];
-
-let currentQuiz = 0;
-
 function displayProducts() {
   const productList = document.getElementById("product-list");
   productList.innerHTML = "";
@@ -29,9 +19,10 @@ function displayProducts() {
     const card = document.createElement("div");
     card.className = "product-card";
     card.innerHTML = `
+    <img src="${item.Image}" alt="${item.type}"/>
       <h3>${item.name}</h3>
       <p>Type: ${item.type}</p>
-      <p>Price: $${item.price}</p>
+      <p>Price: &#8358;${item.price}</p>
       <button onclick="addToCart(${index})">Add to Cart</button>
     `;
     productList.appendChild(card);
